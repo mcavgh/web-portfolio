@@ -3,7 +3,6 @@ import {
   Button,
   Box,
   Typography,
-  IconButton,
   Fab,
   Hidden,
   makeStyles,

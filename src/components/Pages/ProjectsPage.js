@@ -3,7 +3,6 @@ import { Box, Typography, Divider, makeStyles } from "@material-ui/core";
 import * as styles from "../../theme/commonStyles";
 
 import Project from "./../Project";
-import RoutingProject from "./../RoutingProject";
 import homebeatstore from '../../images/home-beatstore.bmp';
 
 
@@ -78,14 +77,14 @@ const ProjectsPage = () => {
     />
   );
 
-  const javaIcon = (
-    <span
-      className="iconify"
-      data-icon="logos:java"
-      data-inline="false"
-      style={{ fontSize: "1.7rem", margin: "0 0.35rem 0 0" }}
-    />
-  );
+  // const javaIcon = (
+  //   <span
+  //     className="iconify"
+  //     data-icon="logos:java"
+  //     data-inline="false"
+  //     style={{ fontSize: "1.7rem", margin: "0 0.35rem 0 0" }}
+  //   />
+  // );
 
   const toDoListIcons = (
     <Box className={classes.icons}>

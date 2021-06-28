@@ -2,10 +2,8 @@ import React from "react";
 import {
   Box,
   Typography,
-  Button,
   Card,
   CardActionArea,
-  CardActions,
   CardContent,
   CardMedia,
   makeStyles,
