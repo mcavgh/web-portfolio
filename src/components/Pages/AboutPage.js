@@ -137,6 +137,8 @@ const AboutPage = () => {
               variant="outlined"
               className={classes.button}
               aria-label="Scroll Down"
+              onClick={() =>      window.location.href='https://firebasestorage.googleapis.com/v0/b/react-auth-punch-it.appspot.com/o/CV_Cavanagh_%20Martin%20(2).pdf?alt=media&token=cf7aa3ed-9202-4bb6-8e7b-03b8be484a0b'}
+
             >
               Download resume
             </Button>
