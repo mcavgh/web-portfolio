@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography, Divider, Link, makeStyles, Grid, CardMedia, Button } from "@material-ui/core";
+import {  Typography, Divider, Link, makeStyles, Grid, CardMedia, Button } from "@material-ui/core";
 import theme from "../../theme/theme";
 import * as styles from "../../theme/commonStyles";
 import picture from "./../../images/picture.jpg";

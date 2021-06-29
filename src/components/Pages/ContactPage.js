@@ -5,13 +5,10 @@ import {
   Link,
   IconButton,
   Divider,
-  Tooltip,
   makeStyles,
-  Zoom,
 } from "@material-ui/core";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import TwitterIcon from "@material-ui/icons/Twitter";
 import EmailIcon from "@material-ui/icons/Email";
 
 import theme from "../../theme/theme";
