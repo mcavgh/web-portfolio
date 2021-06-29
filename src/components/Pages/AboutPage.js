@@ -86,6 +86,14 @@ const AboutPage = () => {
     },
     AboutMe: {
       display: "block",
+    },
+    button:{
+      boxShadow: "4px 4px 3px grey",
+      '&:hover': {
+        backgroundColor: '#ffffff',
+        color:"purple",
+        boxShadow: 'none',
+      },
     }
 
   });
@@ -137,7 +145,7 @@ unidas a hermosos diseños. Me gusta aprender nuevas tecnologías.. <br /> <br /
               variant="outlined"
               className={classes.button}
               aria-label="Scroll Down"
-              onClick={() =>      window.location.href='https://firebasestorage.googleapis.com/v0/b/react-auth-punch-it.appspot.com/o/CV_Cavanagh_%20Martin%20(2).pdf?alt=media&token=cf7aa3ed-9202-4bb6-8e7b-03b8be484a0b'}
+              onClick={() => window.location.href='https://firebasestorage.googleapis.com/v0/b/react-auth-punch-it.appspot.com/o/CV_Cavanagh_%20Martin_ES.pdf?alt=media&token=250f73ed-35e5-4e96-802d-9c38df9f47bb'}
 
             >
               Ver CV

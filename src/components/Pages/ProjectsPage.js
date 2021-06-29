@@ -187,7 +187,7 @@ const ProjectsPage = () => {
         description="Una aplicación hecha con Reactjs y Redux consumiendo una web API de clima"
         image={weatherhome}
         imageTitle="videogames screenshot"
-        link1="https://pi-videogames.vercel.app/home"
+        link1="https://weather-app-ok.vercel.app/"
         github="https://github.com/CavanaghMartin"
       />
 

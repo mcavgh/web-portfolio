@@ -80,6 +80,11 @@ const FrontPage = () => {
       fontSize: "1.75rem",
       marginLeft:"8rem",
       color:"white",
+      boxShadow: "4px 4px 3px black",
+      '&:hover': {
+        color:"yellow",
+        boxShadow: 'none',
+      },
       [theme.breakpoints.down("xs")]: {
         maxWidth:"15rem",
 
@@ -127,7 +132,7 @@ const FrontPage = () => {
         Martín Cavanagh,
       </Typography>
       <Typography className={classes.name} variant="h3" >
-        Fullstack Web Developer.
+         Fullstack Web Developer.
       </Typography>
       </Box>
       <Button
