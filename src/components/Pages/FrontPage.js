@@ -121,7 +121,7 @@ const FrontPage = () => {
       <Box className={classes.titular}>
 
       <Typography className={classes.topText} variant="h3" >
-        Hi, i am
+        Hola soy
       </Typography>
       <Typography className={classes.topText} variant="h3" >
         Martín Cavanagh,
@@ -136,7 +136,7 @@ const FrontPage = () => {
         aria-label="Scroll Down"
         onClick={() => scrollTo("AboutMe")}
         >
-       Know more  
+       Saber mas 
       </Button>
       <Hidden xsDown>
         <Fab

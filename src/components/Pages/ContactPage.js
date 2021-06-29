@@ -90,13 +90,13 @@ const ContactPage = () => {
   return (
     <Box className={`${classes.columnDiv} ${classes.mainDiv}` }id="Contact">
       <Typography className={`${classes.headerText} ${classes.contactText}`}>
-        Contact
+        Contacto
       </Typography>
       <Divider
         classes={{ root: `${classes.divider} ${classes.contactDivider}` }}
       />
       <Typography className={classes.comentText}>
-        You can contact me for Email, Linkedin or GitHub at:
+        Me podés contactar por mail o por LinkedIn:
       </Typography>
       <Box>
 

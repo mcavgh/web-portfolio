@@ -115,12 +115,12 @@ const AboutPage = () => {
           </Grid>
           <Grid item lg={6} md={6} xs={12} className={`${classes.columnDiv} ${classes.mainDiv}`}>
             <Typography className={`${classes.aboutText} ${classes.headerText}`}>
-              About Me
+              Acerca de mi
             </Typography>
             <Divider classes={{ root: classes.divider }} />
             <Typography className={classes.bodyText}>
-              My name is <b>Martin Cavanagh</b> and I am a fullstack web developer who enjoys creating
-              effective business logic coupled with beautiful designs. I like to learn new technologies. <br /> <br />
+              Mi nombre es <b>Martin Cavanagh</b> Soy un desarrollador web que disfruta crear eficaces lógicas de negocio
+unidas a hermosos diseños. Me gusta aprender nuevas tecnologías.. <br /> <br />
               {" "}
 
               <Link
@@ -128,7 +128,7 @@ const AboutPage = () => {
                 className={classes.link}
                 underline="none"
               >
-                contact information and links here
+                información de contacto y links
               </Link>
               .
             </Typography>
@@ -140,7 +140,7 @@ const AboutPage = () => {
               onClick={() =>      window.location.href='https://firebasestorage.googleapis.com/v0/b/react-auth-punch-it.appspot.com/o/CV_Cavanagh_%20Martin%20(2).pdf?alt=media&token=cf7aa3ed-9202-4bb6-8e7b-03b8be484a0b'}
 
             >
-              Download resume
+              Ver CV
             </Button>
 
           </Grid>
