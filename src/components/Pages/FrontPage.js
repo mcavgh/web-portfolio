@@ -20,7 +20,7 @@ const FrontPage = () => {
       justifyContent: "center",
       backgroundImage: "linear-gradient(135deg,#ff2300,#a100cd)",
     width: "100%",
-      height: "100vh",
+      height: "90vh",
       //backgroundImage: `url(${backgroundImage})`,
       backgroundPosition: "center top",
       backgroundRepeat: "no-repeat",

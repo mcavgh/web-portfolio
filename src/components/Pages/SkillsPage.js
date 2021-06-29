@@ -119,23 +119,19 @@ const SkillsPage = () => {
           classes={{ primary: classes.listItemText }}
         />
       </ListItem>
-      
-
-    
       <ListItem>
         <ListItemIcon className={classes.icon}>
-          <span
-            className="iconify"
-            data-icon="file-icons:vscode"
-            data-inline="false"
-            style={{ fontSize: "2rem" }}
-          />
+        <span class="iconify" data-icon="simple-icons:mongodb" data-inline="false"></span>
         </ListItemIcon>
         <ListItemText
-          primary="VSCode"
+          primary="MongoDB"
           classes={{ primary: classes.listItemText }}
         />
       </ListItem>
+      
+
+    
+  
     </div>
   );
 
@@ -236,19 +232,19 @@ const SkillsPage = () => {
               />
             </ListItem>
             <ListItem>
-              <ListItemIcon className={classes.icon}>
-                <span
-                  class="iconify"
-                  data-icon="file-icons:sqlite"
-                  data-inline="false"
-                  style={{ fontSize: "2rem" }}
-                />
-              </ListItemIcon>
-              <ListItemText
-                primary="SQLite"
-                classes={{ primary: classes.listItemText }}
-              />
-            </ListItem>
+        <ListItemIcon className={classes.icon}>
+          <span
+            className="iconify"
+            data-icon="file-icons:vscode"
+            data-inline="false"
+            style={{ fontSize: "2rem" }}
+          />
+        </ListItemIcon>
+        <ListItemText
+          primary="VSCode"
+          classes={{ primary: classes.listItemText }}
+        />
+      </ListItem>
             <Hidden mdUp>{secondHalfList}</Hidden>
           </List>
         </Box>

@@ -4,6 +4,9 @@ import * as styles from "../../theme/commonStyles";
 
 import Project from "./../Project";
 import homebeatstore from '../../images/home-beatstore.bmp';
+import homeEatx from '../../images/pathfindingScreenshot.png';
+import videogamesHome from '../../images/videogamesHome.bmp';
+import weatherhome from '../../images/weather-home.bmp';
 
 
 const ProjectsPage = () => {
@@ -15,7 +18,7 @@ const ProjectsPage = () => {
       width: "auto",
     },
     headerText: {
-      color:"white",
+      color: "white",
       ...styles.headerText,
       marginTop: "5rem",
     },
@@ -76,23 +79,59 @@ const ProjectsPage = () => {
       style={{ fontSize: "1.7rem", margin: "0 0.35rem" }}
     />
   );
+  const nodeIcon = (
+    <span className="iconify" style={{ fontSize: "1.7rem", margin: "0 0.35rem" }} data-icon="vscode-icons:file-type-node" data-inline="false"></span>
+  );
+  const sequelizeIcon = (
+    <span className="iconify" style={{ fontSize: "1.7rem", margin: "0 0.35rem" }} data-icon="logos:sequelize" data-inline="false"></span>
+  );
+  const postgresIcon = (
+    <span className="iconify" style={{ fontSize: "1.7rem", margin: "0 0.35rem" }} data-icon="logos:postgresql" data-inline="false"></span>);
 
-  // const javaIcon = (
-  //   <span
-  //     className="iconify"
-  //     data-icon="logos:java"
-  //     data-inline="false"
-  //     style={{ fontSize: "1.7rem", margin: "0 0.35rem 0 0" }}
-  //   />
-  // );
+  const expressIcon = (
+    <span className="iconify" style={{ fontSize: "1.7rem", margin: "0 0.35rem" }} data-icon="simple-icons:express" data-inline="false"></span>);
+    const MUIcon = (
 
-  const toDoListIcons = (
+<span class="iconify" data-icon="logos:material-ui" data-inline="false"></span>
+    );
+
+  const beatStoreIcons = (
     <Box className={classes.icons}>
       {reactIcon}
       {reduxIcon}
       {javascriptIcon}
       {htmlIcon}
       {cssIcon}
+      {nodeIcon}
+      {expressIcon}
+      {sequelizeIcon}
+      {postgresIcon}
+      
+    </Box>
+  );
+  const eatxIcons = (
+    <Box className={classes.icons}>
+      {reactIcon}
+      {reduxIcon}
+      {javascriptIcon}
+      {htmlIcon}
+      {cssIcon}
+      {MUIcon}
+      {nodeIcon}
+      {expressIcon}
+      {sequelizeIcon}
+      {postgresIcon}
+      
+    </Box>
+  );
+  const frontIcons = (
+    <Box className={classes.icons}>
+      {reactIcon}
+      {reduxIcon}
+      {javascriptIcon}
+      {htmlIcon}
+      {cssIcon}
+      
     </Box>
   );
 
@@ -103,15 +142,46 @@ const ProjectsPage = () => {
       <Divider className={classes.divider} />
       <Project
         title="Beatstore"
-        icons={toDoListIcons}
-        description="A to-do list application made with Reactjs and Redux. Features include the ability to sort tasks, a fully responsive design, and a dark mode and a pink mode."
+        icons={beatStoreIcons}
+        description="A beat ecommerce application made with Reactjs and Redux.Node js and Posgres.Including the features:Payment gateway integration (Stripe).
+        Sending transactional emails.
+        Product discount system.
+        Management and sending of newsletters.
+        Administration of shopping cart and product orders,
+        user administration, password management."
         image={homebeatstore}
-        imageTitle="To-do List screenshot"
+        imageTitle="beatstore screenshot"
         link1="https://beatstore-henry.web.app/"
-        buttonText1="Live Demo"
-        buttonText2="GitHub"
+        github="https://github.com/CavanaghMartin"
       />
-      
+      <Project
+        title="Eatx"
+        icons={eatxIcons}
+        description="A food ecommerce application made with Reactjs and Redux.Node js and Posgres"
+        image={homeEatx}
+        imageTitle="eatx screenshot"
+        link1="https://beatstore-henry.web.app/"
+        github="https://github.com/CavanaghMartin"
+      />
+       <Project
+        title="Videogames app"
+        icons={frontIcons}
+        description="A videogames application made with Reactjs and Redux consuming a videogames API"
+        image={videogamesHome}
+        imageTitle="videogames screenshot"
+        link1="https://pi-videogames.vercel.app/home"
+        github="https://github.com/CavanaghMartin"
+      />
+          <Project
+        title="Weather app"
+        icons={frontIcons}
+        description="A weather application made with Reactjs and Redux consuming a weather API."
+        image={weatherhome}
+        imageTitle="videogames screenshot"
+        link1="https://pi-videogames.vercel.app/home"
+        github="https://github.com/CavanaghMartin"
+      />
+
     </Box>
   );
 };

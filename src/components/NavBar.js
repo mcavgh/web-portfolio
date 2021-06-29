@@ -35,7 +35,7 @@ const NavBar = () => {
     button: {
       background: "inherit",
       borderRadius: 3,
-      color: "black",
+      color: "white",
       height: 40,
       padding: "0 1rem",
       margin: "0 0.5rem",

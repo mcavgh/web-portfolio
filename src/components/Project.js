@@ -87,7 +87,7 @@ const Project = (props) => {
             <IconButton
             className={classes.icon}
             aria-label="GitHub link"
-            onClick={() => window.open("https://github.com/CavanaghMartin")}
+            onClick={() => window.open(props.github)}
           >
             <GitHubIcon className={classes.github} />
           </IconButton>
