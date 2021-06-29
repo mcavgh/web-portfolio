@@ -5,13 +5,10 @@ import {
   Link,
   IconButton,
   Divider,
-  Tooltip,
   makeStyles,
-  Zoom,
 } from "@material-ui/core";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import TwitterIcon from "@material-ui/icons/Twitter";
 import EmailIcon from "@material-ui/icons/Email";
 
 import theme from "../../theme/theme";
@@ -90,13 +87,13 @@ const ContactPage = () => {
   return (
     <Box className={`${classes.columnDiv} ${classes.mainDiv}` }id="Contact">
       <Typography className={`${classes.headerText} ${classes.contactText}`}>
-        Contact
+        Contacto
       </Typography>
       <Divider
         classes={{ root: `${classes.divider} ${classes.contactDivider}` }}
       />
       <Typography className={classes.comentText}>
-        You can contact me for Email, Linkedin or GitHub at:
+        Me podés contactar por mail o por LinkedIn:
       </Typography>
       <Box>
 

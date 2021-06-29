@@ -31,6 +31,11 @@ const Project = (props) => {
       [theme.breakpoints.down("xs")]: {
         width: "90%",
       },
+      boxShadow: "4px 4px 5px black",
+      '&:hover': {
+        color:"purple",
+        boxShadow: 'none',
+      },
     },
     title: {
       fontSize: "1.4rem",
@@ -43,6 +48,7 @@ const Project = (props) => {
       alignItems: "center",
       width: "100%",
       margin: "1rem",
+    
     },
     button: {
       margin: "0.5rem",
@@ -65,6 +71,7 @@ const Project = (props) => {
     },
     text: {
       margin: "0.5rem 0",
+      color:"black"
     },
     icon:{
       display:"inline"
@@ -92,15 +99,15 @@ const Project = (props) => {
             <GitHubIcon className={classes.github} />
           </IconButton>
             {props.icons}
-            <Typography className={classes.text}>
-              {props.description}
-            </Typography>
             <CardMedia
               className={classes.image}
               component="img"
               image={props.image}
               title={props.imageTitle}
             />
+            <Typography className={classes.text}>
+              {props.description}
+            </Typography>
           </CardContent>
         </CardActionArea>
 

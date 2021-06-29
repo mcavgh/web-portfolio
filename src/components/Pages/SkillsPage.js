@@ -141,7 +141,7 @@ const SkillsPage = () => {
         className={`${classes.skillsText} ${classes.headerText}`}
         align="center"
       >
-        My Skills & Tools
+        Mis Skills 
       </Typography>
       <Divider classes={{ root: classes.divider }} />
       <Box className={`${classes.rowDiv} ${classes.rowDivider}`}>

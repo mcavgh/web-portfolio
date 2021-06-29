@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography, Divider, Link, makeStyles, Grid, CardMedia, Button } from "@material-ui/core";
+import {  Typography, Divider, Link, makeStyles, Grid, CardMedia, Button } from "@material-ui/core";
 import theme from "../../theme/theme";
 import * as styles from "../../theme/commonStyles";
 import picture from "./../../images/picture.jpg";
@@ -86,6 +86,14 @@ const AboutPage = () => {
     },
     AboutMe: {
       display: "block",
+    },
+    button:{
+      boxShadow: "4px 4px 3px grey",
+      '&:hover': {
+        backgroundColor: '#ffffff',
+        color:"purple",
+        boxShadow: 'none',
+      },
     }
 
   });
@@ -115,12 +123,12 @@ const AboutPage = () => {
           </Grid>
           <Grid item lg={6} md={6} xs={12} className={`${classes.columnDiv} ${classes.mainDiv}`}>
             <Typography className={`${classes.aboutText} ${classes.headerText}`}>
-              About Me
+              Acerca de mi
             </Typography>
             <Divider classes={{ root: classes.divider }} />
             <Typography className={classes.bodyText}>
-              My name is <b>Martin Cavanagh</b> and I am a fullstack web developer who enjoys creating
-              effective business logic coupled with beautiful designs. I like to learn new technologies. <br /> <br />
+              Mi nombre es <b>Martin Cavanagh</b> Soy un desarrollador web que disfruta crear eficaces lógicas de negocio
+unidas a hermosos diseños. Me gusta aprender nuevas tecnologías.. <br /> <br />
               {" "}
 
               <Link
@@ -128,7 +136,7 @@ const AboutPage = () => {
                 className={classes.link}
                 underline="none"
               >
-                contact information and links here
+                información de contacto y links
               </Link>
               .
             </Typography>
@@ -137,10 +145,10 @@ const AboutPage = () => {
               variant="outlined"
               className={classes.button}
               aria-label="Scroll Down"
-              onClick={() =>      window.location.href='https://firebasestorage.googleapis.com/v0/b/react-auth-punch-it.appspot.com/o/CV_Cavanagh_%20Martin%20(2).pdf?alt=media&token=cf7aa3ed-9202-4bb6-8e7b-03b8be484a0b'}
+              onClick={() => window.location.href='https://firebasestorage.googleapis.com/v0/b/react-auth-punch-it.appspot.com/o/CV_Cavanagh_%20Martin_ES.pdf?alt=media&token=250f73ed-35e5-4e96-802d-9c38df9f47bb'}
 
             >
-              Download resume
+              Ver CV
             </Button>
 
           </Grid>

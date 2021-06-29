@@ -138,17 +138,19 @@ const ProjectsPage = () => {
 
   return (
     <Box className={classes.columnDiv} id="Projects">
-      <Typography className={classes.headerText}>Projects</Typography>
+      <Typography className={classes.headerText}>Proyectos</Typography>
       <Divider className={classes.divider} />
       <Project
         title="Beatstore"
         icons={beatStoreIcons}
-        description="A beat ecommerce application made with Reactjs and Redux.Node js and Posgres.Including the features:Payment gateway integration (Stripe).
-        Sending transactional emails.
-        Product discount system.
-        Management and sending of newsletters.
-        Administration of shopping cart and product orders,
-        user administration, password management."
+        description="Una aplicación de ecommerce de comida realizada con la metodología SCRUM con un grupo de 5 personas durante un mes .
+        Incluye las features:
+        pasarela de pagos (Stripe).
+        Envío de emails transaccionales.
+        Sistema de descuento de productos.
+        gestión y manejo de newsletters.
+        Administración de carro de compras y órdenes de productos,
+        autenticación ."
         image={homebeatstore}
         imageTitle="beatstore screenshot"
         link1="https://beatstore-henry.web.app/"
@@ -157,28 +159,35 @@ const ProjectsPage = () => {
       <Project
         title="Eatx"
         icons={eatxIcons}
-        description="A food ecommerce application made with Reactjs and Redux.Node js and Posgres"
+        description="Una aplicación de ecommerce de comida realizada con la metodología SCRUM con un grupo de 4 personas durante un mes .
+        Incluye las features:
+        Pasarela de pagos (Mercadopago).
+        Sistema de descuento de productos.
+        gestión y manejo de newsletters.
+        Administración de carro de compras y órdenes de productos,
+        autenticación ."
+
         image={homeEatx}
         imageTitle="eatx screenshot"
-        link1="https://beatstore-henry.web.app/"
-        github="https://github.com/CavanaghMartin"
+        link1="https://ec-webft11-g10.vercel.app/"
+        github="https://github.com/CavanaghMartin/ec-webft11-G10"
       />
        <Project
         title="Videogames app"
         icons={frontIcons}
-        description="A videogames application made with Reactjs and Redux consuming a videogames API"
+        description="Una aplicación hecha con Reactjs y Redux consumiendo una web API de videojuegos"
         image={videogamesHome}
         imageTitle="videogames screenshot"
         link1="https://pi-videogames.vercel.app/home"
-        github="https://github.com/CavanaghMartin"
+        github="https://github.com/CavanaghMartin/videogames_app"
       />
           <Project
         title="Weather app"
         icons={frontIcons}
-        description="A weather application made with Reactjs and Redux consuming a weather API."
+        description="Una aplicación hecha con Reactjs y Redux consumiendo una web API de clima"
         image={weatherhome}
         imageTitle="videogames screenshot"
-        link1="https://pi-videogames.vercel.app/home"
+        link1="https://weather-app-ok.vercel.app/"
         github="https://github.com/CavanaghMartin"
       />
 

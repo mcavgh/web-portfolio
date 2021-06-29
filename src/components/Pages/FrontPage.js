@@ -80,6 +80,11 @@ const FrontPage = () => {
       fontSize: "1.75rem",
       marginLeft:"8rem",
       color:"white",
+      boxShadow: "4px 4px 3px black",
+      '&:hover': {
+        color:"yellow",
+        boxShadow: 'none',
+      },
       [theme.breakpoints.down("xs")]: {
         maxWidth:"15rem",
 
@@ -121,13 +126,13 @@ const FrontPage = () => {
       <Box className={classes.titular}>
 
       <Typography className={classes.topText} variant="h3" >
-        Hi, i am
+        Hola soy
       </Typography>
-      <Typography className={classes.name} variant="h3" >
+      <Typography className={classes.topText} variant="h3" >
         Martín Cavanagh,
       </Typography>
-      <Typography className={classes.bottomText} >
-        Web Developer.
+      <Typography className={classes.name} variant="h3" >
+         Fullstack Web Developer.
       </Typography>
       </Box>
       <Button
@@ -136,7 +141,7 @@ const FrontPage = () => {
         aria-label="Scroll Down"
         onClick={() => scrollTo("AboutMe")}
         >
-       Know more  
+       Saber mas 
       </Button>
       <Hidden xsDown>
         <Fab
@@ -144,7 +149,7 @@ const FrontPage = () => {
           variant="extended"
           size="small"
           aria-label="Back to Top"
-          onClick={() => scrollTo("Top")}
+          onClick={() => scrollTo("navBar")}
         >
           <KeyboardArrowUpIcon />
           Back to Top

@@ -80,13 +80,13 @@ const NavBar = () => {
   const appBarButtons = (
     <Grid className={classes.div}>
       <Button className={classes.button} onClick={() => scrollTo("AboutMe")}>
-        About Me
+        Acerca de mi
       </Button>
       <Button className={classes.button} onClick={() => scrollTo("Projects")}>
-        Projects
+        Proyectos
       </Button>
       <Button className={classes.button} onClick={() => scrollTo("Contact")}>
-        Contact
+        Contacto
       </Button>
     </Grid>
   );
@@ -128,7 +128,7 @@ const NavBar = () => {
   );
 
   return (
-    <AppBar position="relative" className={classes.appBar}>
+    <AppBar position="relative" className={classes.appBar} id="navBar">
       <Toolbar>
         <Hidden xsDown>{appBarButtons}</Hidden>
         <Hidden smUp>{sideDrawer}</Hidden>
