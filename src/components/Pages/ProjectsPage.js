@@ -143,7 +143,7 @@ const ProjectsPage = () => {
       <Project
         title="Beatstore"
         icons={beatStoreIcons}
-        description="Una aplicación de ecommerce de Beats de música.
+        description="Una aplicación de ecommerce de comida realizada con la metodología SCRUM con un grupo de 5 personas durante un mes .
         Incluye las features:
         pasarela de pagos (Stripe).
         Envío de emails transaccionales.
@@ -159,7 +159,7 @@ const ProjectsPage = () => {
       <Project
         title="Eatx"
         icons={eatxIcons}
-        description="Una aplicación de ecommerce de comida.
+        description="Una aplicación de ecommerce de comida realizada con la metodología SCRUM con un grupo de 4 personas durante un mes .
         Incluye las features:
         Pasarela de pagos (Mercadopago).
         Sistema de descuento de productos.
@@ -169,8 +169,8 @@ const ProjectsPage = () => {
 
         image={homeEatx}
         imageTitle="eatx screenshot"
-        link1="https://beatstore-henry.web.app/"
-        github="https://github.com/CavanaghMartin"
+        link1="https://ec-webft11-g10.vercel.app/"
+        github="https://github.com/CavanaghMartin/ec-webft11-G10"
       />
        <Project
         title="Videogames app"
@@ -179,12 +179,12 @@ const ProjectsPage = () => {
         image={videogamesHome}
         imageTitle="videogames screenshot"
         link1="https://pi-videogames.vercel.app/home"
-        github="https://github.com/CavanaghMartin"
+        github="https://github.com/CavanaghMartin/videogames_app"
       />
           <Project
         title="Weather app"
         icons={frontIcons}
-        description="Una aplicación hecha con Reactjs y Redux consumiendo una web API de videojuegos"
+        description="Una aplicación hecha con Reactjs y Redux consumiendo una web API de clima"
         image={weatherhome}
         imageTitle="videogames screenshot"
         link1="https://pi-videogames.vercel.app/home"

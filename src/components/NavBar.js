@@ -80,13 +80,13 @@ const NavBar = () => {
   const appBarButtons = (
     <Grid className={classes.div}>
       <Button className={classes.button} onClick={() => scrollTo("AboutMe")}>
-        About Me
+        Acerca de mi
       </Button>
       <Button className={classes.button} onClick={() => scrollTo("Projects")}>
-        Projects
+        Proyectos
       </Button>
       <Button className={classes.button} onClick={() => scrollTo("Contact")}>
-        Contact
+        Contacto
       </Button>
     </Grid>
   );
@@ -106,7 +106,7 @@ const NavBar = () => {
         }}
       >
         <List onClick={handleDrawerToggle}>
-          {["ACERCA DE MI", "PROYECTOS", "CONTACTO"].map((text, index) => (
+          {["ABOUT ME", "PROJECTS", "CONTACT"].map((text, index) => (
             <ListItem
               button
               component="a"
