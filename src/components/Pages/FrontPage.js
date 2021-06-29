@@ -123,11 +123,11 @@ const FrontPage = () => {
       <Typography className={classes.topText} variant="h3" >
         Hi, i am
       </Typography>
-      <Typography className={classes.name} variant="h3" >
+      <Typography className={classes.topText} variant="h3" >
         Martín Cavanagh,
       </Typography>
-      <Typography className={classes.bottomText} >
-        Web Developer.
+      <Typography className={classes.name} variant="h3" >
+        Fullstack Web Developer.
       </Typography>
       </Box>
       <Button
@@ -144,7 +144,7 @@ const FrontPage = () => {
           variant="extended"
           size="small"
           aria-label="Back to Top"
-          onClick={() => scrollTo("Top")}
+          onClick={() => scrollTo("navBar")}
         >
           <KeyboardArrowUpIcon />
           Back to Top

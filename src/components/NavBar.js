@@ -128,7 +128,7 @@ const NavBar = () => {
   );
 
   return (
-    <AppBar position="relative" className={classes.appBar}>
+    <AppBar position="relative" className={classes.appBar} id="navBar">
       <Toolbar>
         <Hidden xsDown>{appBarButtons}</Hidden>
         <Hidden smUp>{sideDrawer}</Hidden>
