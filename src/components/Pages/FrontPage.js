@@ -19,7 +19,7 @@ const FrontPage = () => {
       flexDirection: "column",
       justifyContent: "center",
       backgroundImage: "linear-gradient(135deg,#ff2300,#a100cd)",
-    width: "100%",
+      width: "100%",
       height: "90vh",
       //backgroundImage: `url(${backgroundImage})`,
       backgroundPosition: "center top",
@@ -27,70 +27,59 @@ const FrontPage = () => {
       backgroundAttachment: "scroll",
       backgroundSize: "cover",
       [theme.breakpoints.down("xs")]: {
-        backgroundColor:"black",
+        backgroundColor: "black",
         backgroundPosition: "left center",
         backgroundAttachment: "scroll",
       },
     },
     name: {
       position: "relative",
-      top: "6rem",
       margin: "0.5rem 1rem",
       fontWeight: "bold",
       [theme.breakpoints.down("xs")]: {
-        top: "4rem",
         fontSize: "3.4rem",
       },
       [theme.breakpoints.up("lg")]: {
-        top: "7rem",
         fontSize: "5rem",
       },
     },
     topText: {
       position: "relative",
-      top: "6rem",
       margin: "0 1.4rem",
       [theme.breakpoints.down("xs")]: {
-        top: "4rem",
         fontSize: "2.5rem",
       },
       [theme.breakpoints.up("lg")]: {
-        top: "7rem",
         fontSize: "4rem",
       },
     },
     bottomText: {
       position: "relative",
-      top: "6rem",
       margin: "0 1.4rem",
       fontSize: "2.1rem",
       [theme.breakpoints.down("xs")]: {
-        top: "4rem",
         fontSize: "1rem",
       },
       [theme.breakpoints.up("lg")]: {
-        top: "7rem",
         fontSize: "1.4rem",
       },
     },
     button: {
-      maxWidth:"400px",
+      maxWidth: "400px",
       position: "relative",
-      top: "9rem",
       fontSize: "1.75rem",
-      marginLeft:"8rem",
-      color:"white",
+      marginLeft: "8rem",
+      color: "white",
       boxShadow: "4px 4px 3px black",
       '&:hover': {
-        color:"yellow",
+        color: "yellow",
         boxShadow: 'none',
       },
       [theme.breakpoints.down("xs")]: {
-        maxWidth:"15rem",
+        maxWidth: "15rem",
 
-        marginLeft:"2rem",
+        marginLeft: "2rem",
 
-        top: "6rem",
         fontSize: "1rem",
       },
     },
@@ -105,12 +94,12 @@ const FrontPage = () => {
       margin: "0.8rem",
       marginBottom: "3rem",
     },
-    titular:{
-      paddingLeft:"7rem",
-      color:"white",
+    titular: {
+      paddingLeft: "7rem",
+      color: "white",
       [theme.breakpoints.down("xs")]: {
-        paddingLeft:"1rem",
-      color:"white",
+        paddingLeft: "1rem",
+        color: "white",
       },
     }
   });
@@ -125,23 +114,23 @@ const FrontPage = () => {
     <Box className={classes.background} id="Top">
       <Box className={classes.titular}>
 
-      <Typography className={classes.topText} variant="h3" >
-        Hola soy
-      </Typography>
-      <Typography className={classes.topText} variant="h3" >
-        Martín Cavanagh,
-      </Typography>
-      <Typography className={classes.name} variant="h3" >
-         Fullstack Web Developer.
-      </Typography>
+        <Typography className={classes.topText} variant="h3" >
+          Hola soy
+        </Typography>
+        <Typography className={classes.topText} variant="h3" >
+          Martín Cavanagh,
+        </Typography>
+        <Typography className={classes.name} variant="h3" >
+          Fullstack Web Developer.
+        </Typography>
       </Box>
       <Button
-      variant="outlined"
+        variant="outlined"
         className={classes.button}
         aria-label="Scroll Down"
         onClick={() => scrollTo("AboutMe")}
-        >
-       Saber mas 
+      >
+        Saber mas
       </Button>
       <Hidden xsDown>
         <Fab

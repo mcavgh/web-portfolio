@@ -143,7 +143,7 @@ const ProjectsPage = () => {
       <Project
         title="Beatstore"
         icons={beatStoreIcons}
-        description="Una aplicación de ecommerce de comida realizada con la metodología SCRUM con un grupo de 5 personas durante un mes .
+        description="Una aplicación de ecommerce de beats realizada con la metodología SCRUM con un grupo de 5 personas durante un mes .
         Incluye las features:
         pasarela de pagos (Stripe).
         Envío de emails transaccionales.
