@@ -7,9 +7,12 @@ import homebeatstore from '../../images/home-beatstore.bmp';
 import homeEatx from '../../images/pathfindingScreenshot.png';
 import videogamesHome from '../../images/videogamesHome.bmp';
 import weatherhome from '../../images/weather-home.bmp';
+import { useTranslation } from 'react-i18next';
+
 
 
 const ProjectsPage = () => {
+  const [ t, i18n ] = useTranslation("global");
   const useStyles = makeStyles({
     columnDiv: {
       backgroundImage: "linear-gradient(135deg,#ff2300,#a100cd)",
@@ -138,19 +141,13 @@ const ProjectsPage = () => {
 
   return (
     <Box className={classes.columnDiv} id="Projects">
-      <Typography className={classes.headerText}>Proyectos</Typography>
+      <Typography className={classes.headerText}>{t("proyects.title")}</Typography>
       <Divider className={classes.divider} />
       <Project
         title="Beatstore"
         icons={beatStoreIcons}
-        description="Una aplicación de ecommerce de beats realizada con la metodología SCRUM con un grupo de 5 personas durante un mes .
-        Incluye las features:
-        pasarela de pagos (Stripe).
-        Envío de emails transaccionales.
-        Sistema de descuento de productos.
-        gestión y manejo de newsletters.
-        Administración de carro de compras y órdenes de productos,
-        autenticación ."
+      description=          {t("proyects.beatstore")}
+    
         image={homebeatstore}
         imageTitle="beatstore screenshot"
         link1="https://beatstore-henry.web.app/"
@@ -159,13 +156,7 @@ const ProjectsPage = () => {
       <Project
         title="Eatx"
         icons={eatxIcons}
-        description="Una aplicación de ecommerce de comida realizada con la metodología SCRUM con un grupo de 4 personas durante un mes .
-        Incluye las features:
-        Pasarela de pagos (Mercadopago).
-        Sistema de descuento de productos.
-        gestión y manejo de newsletters.
-        Administración de carro de compras y órdenes de productos,
-        autenticación ."
+        description={t("proyects.eatx")}
 
         image={homeEatx}
         imageTitle="eatx screenshot"
@@ -175,7 +166,7 @@ const ProjectsPage = () => {
        <Project
         title="Videogames app"
         icons={frontIcons}
-        description="Una aplicación hecha con Reactjs y Redux consumiendo una web API de videojuegos"
+        description={t("proyects.videogamesApp")}
         image={videogamesHome}
         imageTitle="videogames screenshot"
         link1="https://pi-videogames.vercel.app/home"
@@ -184,7 +175,7 @@ const ProjectsPage = () => {
           <Project
         title="Weather app"
         icons={frontIcons}
-        description="Una aplicación hecha con Reactjs y Redux consumiendo una web API de clima"
+        description={t("proyects.wheatherApp")}
         image={weatherhome}
         imageTitle="videogames screenshot"
         link1="https://weather-app-ok.vercel.app/"

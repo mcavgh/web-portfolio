@@ -13,8 +13,12 @@ import EmailIcon from "@material-ui/icons/Email";
 
 import theme from "../../theme/theme";
 import * as styles from "../../theme/commonStyles";
+import { useTranslation } from 'react-i18next';
 
-const ContactPage = () => {
+
+
+  const ContactPage = () => {
+  const [ t, i18n ] = useTranslation("global");
   const useStyles = makeStyles({
     mainDiv: {
       backgroundColor: "rgba(0, 0, 0, 0.92)",
@@ -87,13 +91,13 @@ const ContactPage = () => {
   return (
     <Box className={`${classes.columnDiv} ${classes.mainDiv}` }id="Contact">
       <Typography className={`${classes.headerText} ${classes.contactText}`}>
-        Contacto
+      {t("navbar.btn3")}
       </Typography>
       <Divider
         classes={{ root: `${classes.divider} ${classes.contactDivider}` }}
       />
       <Typography className={classes.comentText}>
-        Me podés contactar por mail o por LinkedIn:
+      {t("about.links")}
       </Typography>
       <Box>
 

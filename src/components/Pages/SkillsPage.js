@@ -12,8 +12,12 @@ import {
 } from "@material-ui/core";
 import theme from "./../../theme/theme";
 import * as styles from "../../theme/commonStyles";
+import { useTranslation } from 'react-i18next';
 
 const SkillsPage = () => {
+
+  const [ t, i18n ] = useTranslation("global");
+
   const useStyles = makeStyles({
     columnDiv: {
       ...styles.columnDiv,
@@ -141,7 +145,8 @@ const SkillsPage = () => {
         className={`${classes.skillsText} ${classes.headerText}`}
         align="center"
       >
-        Mis Skills 
+                    {t("skills.title")}
+
       </Typography>
       <Divider classes={{ root: classes.divider }} />
       <Box className={`${classes.rowDiv} ${classes.rowDivider}`}>

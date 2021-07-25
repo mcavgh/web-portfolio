@@ -1,0 +1,35 @@
+{
+    "navbar":{
+        "btn1":"About me",
+        "btn2":"Projects",
+        "btn3":"Contact"
+
+    },
+
+    "front":{
+        "hello":"Hello im",
+        "saberbtn":"know more"
+    },
+
+    "about":{
+        "title":"About me",
+        "body":"Im a web developer and computer science student who enjoys creating effective business logic coupled with beautiful designs. I like to learn new technologies.",
+        "links":"contact information and links:",
+        "btn":"download cv"
+
+    },
+    
+    "skills":{
+        "title":"My skills"
+    },
+
+    "proyects":{
+        "title":"Projects",
+        "beatstore":"A beats ecommerce  app developed with SCRUM methodology with a group of 5 people for a month. Includes features: payment gateway (Stripe). Sending transactional emails. Product discount system. Newsletters management and management. Shopping cart and product order management. , authentication.",
+        "eatx":"A food ecommerce app developed with SCRUM methodology with a group of 5 people for a month. Includes features: payment gateway (Stripe). Sending transactional emails. Product discount system. Newsletters management and management. Shopping cart and product order management. , authentication.",
+        "videogamesApp":"Web app made with React and Redux consuming a web api ",
+        "wheatherApp":"Web app made with React and Redux consuming a web api"
+
+    }
+   
+}

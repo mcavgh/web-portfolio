@@ -1,0 +1,35 @@
+{
+    "navbar":{
+        "btn1":"Acerca de mi",
+        "btn2":"Proyectos",
+        "btn3":"Contacto"
+
+    },
+
+    "front":{
+        "hello":"Hola soy",
+        "saberbtn":"Saber mas"
+    },
+
+    "about":{
+        "title":"Acerca de mi",
+        "body":"Soy un desarrollador web que disfruta crear eficaces lógicas de negocio unidas a hermosos diseños. Me gusta aprender nuevas tecnologías.",
+        "links":"información de contacto y links:",
+        "btn":"ver cv"
+
+    },
+    
+    "skills":{
+        "title":"Mis skills"
+    },
+
+    "proyects":{
+        "title":"Proyectos",
+        "beatstore":"Una aplicación de ecommerce de beats realizada con la metodología SCRUM con un grupo de 5 personas durante un mes .Incluye las features:pasarela de pagos (Stripe).Envío de emails transaccionales.Sistema de descuento de productos.gestión y manejo de newsletters.Administración de carro de compras y órdenes de productos, autenticación.",
+        "eatx":"Una aplicación de ecommerce de comida realizada con la metodología SCRUM con un grupo de 5 personas durante un mes .Incluye las features:pasarela de pagos (Stripe).Envío de emails transaccionales.Sistema de descuento de productos.gestión y manejo de newsletters.Administración de carro de compras y órdenes de productos, autenticación.",
+        "videogamesApp":"Una aplicación hecha con React y Redux que consume una web api ",
+        "wheatherApp":"Una aplicación hecha con React y Redux que consume una web api "
+
+    }
+
+}

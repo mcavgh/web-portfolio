@@ -14,18 +14,20 @@ import {
   Box,
   makeStyles,
 } from "@material-ui/core";
+import TranslateIcon from '@material-ui/icons/Translate';
 import MenuRoundedIcon from "@material-ui/icons/MenuRounded";
+import { useTranslation } from "react-i18next";
 
 const NavBar = () => {
   const useStyles = makeStyles({
     div: {
       display: "flex",
-
-      justifyContent: "space-between",
+      justifyContent: "space-evenly"
     },
     appBar: {
       background: "primary",
       color: "blue",
+      position:"fixed"
     },
     drawerPaper: {
       width: "60%",
@@ -33,12 +35,12 @@ const NavBar = () => {
       color: "black",
     },
     button: {
+      display: "block",
       background: "inherit",
       borderRadius: 3,
       color: "white",
       height: 40,
       padding: "0 1rem",
-      margin: "0 0.5rem",
       fontSize: "0.9rem",
     },
     text: {
@@ -55,6 +57,7 @@ const NavBar = () => {
   const classes = useStyles();
 
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const { t, i18n } = useTranslation("global")
 
   const handleDrawerToggle = () => {
     setDrawerOpen(!drawerOpen);
@@ -78,17 +81,46 @@ const NavBar = () => {
   };
 
   const appBarButtons = (
-    <Grid className={classes.div}>
-      <Button className={classes.button} onClick={() => scrollTo("AboutMe")}>
-        Acerca de mi
-      </Button>
-      <Button className={classes.button} onClick={() => scrollTo("Projects")}>
-        Proyectos
-      </Button>
-      <Button className={classes.button} onClick={() => scrollTo("Contact")}>
-        Contacto
-      </Button>
-    </Grid>
+    <>
+    <Grid xs={12} className={classes.div}>
+
+      <Grid item>
+        <Button className={classes.button} onClick={() => scrollTo("AboutMe")}>
+          {t("navbar.btn1")}
+
+        </Button>
+      </Grid>
+
+      <Grid item>
+        <Button className={classes.button} onClick={() => scrollTo("Projects")}>
+          {t("navbar.btn2")}
+
+        </Button>
+      </Grid>
+
+      <Grid item>
+        <Button className={classes.button} onClick={() => scrollTo("Contact")}>
+          {t("navbar.btn3")}
+
+        </Button>
+      </Grid>
+
+
+
+    </Grid >
+    
+        <TranslateIcon style={{color:"white"}} />
+      <Grid item>
+        <Button className={classes.button} onClick={() => i18n.changeLanguage("es")}>
+          ES
+        </Button>
+      </Grid>
+      <Grid item>
+        <Button className={classes.button} onClick={() => i18n.changeLanguage("en")}>
+          EN
+        </Button>
+      </Grid>
+      </>
   );
 
   const sideDrawer = (

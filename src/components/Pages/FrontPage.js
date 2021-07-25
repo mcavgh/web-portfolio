@@ -11,8 +11,10 @@ import {
 
 import theme from "../../theme/theme";
 import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
+import { useTranslation } from 'react-i18next';
 
 const FrontPage = () => {
+  const [ t, i18n ] = useTranslation("global");
   const useStyles = makeStyles({
     background: {
       display: "flex",
@@ -115,7 +117,7 @@ const FrontPage = () => {
       <Box className={classes.titular}>
 
         <Typography className={classes.topText} variant="h3" >
-          Hola soy
+          {t("front.hello")}
         </Typography>
         <Typography className={classes.topText} variant="h3" >
           Martín Cavanagh,
@@ -130,7 +132,7 @@ const FrontPage = () => {
         aria-label="Scroll Down"
         onClick={() => scrollTo("AboutMe")}
       >
-        Saber mas
+          {t("front.saberbtn")}
       </Button>
       <Hidden xsDown>
         <Fab
