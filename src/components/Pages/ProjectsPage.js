@@ -7,6 +7,9 @@ import homebeatstore from '../../images/home-beatstore.bmp';
 import homeEatx from '../../images/pathfindingScreenshot.png';
 import videogamesHome from '../../images/videogamesHome.bmp';
 import weatherhome from '../../images/weather-home.bmp';
+import subreddit from '../../images/subredi.gif';
+import todogif from '../../images/todo-gif.gif';
+
 import { useTranslation } from 'react-i18next';
 
 
@@ -132,11 +135,20 @@ const ProjectsPage = () => {
       {reactIcon}
       {reduxIcon}
       {javascriptIcon}
-      {htmlIcon}
-      {cssIcon}
+      
       
     </Box>
   );
+  const mobileIcons = (
+    <Box className={classes.icons}>
+      {reactIcon}
+      {reduxIcon}
+      {javascriptIcon}
+    
+      
+    </Box>
+  );
+
 
 
   return (
@@ -163,6 +175,27 @@ const ProjectsPage = () => {
         link1="https://ec-webft11-g10.vercel.app/"
         github="https://github.com/CavanaghMartin/ec-webft11-G10"
       />
+      <Project
+        title="SubReddit app"
+        icons={mobileIcons}
+        description={t("proyects.subreddit")}
+        mobile={true}
+        image={subreddit}
+        imageTitle="subredit screenshot"
+        //link1="https://ec-webft11-g10.vercel.app/"
+        github="https://github.com/CavanaghMartin/ec-webft11-G10"
+      />
+        <Project
+        title="Todo-list app"
+        icons={mobileIcons}
+        description={t("proyects.todo")}
+        mobile={true}
+        image={todogif}
+        imageTitle="todo screenshot"
+        //link1="https://ec-webft11-g10.vercel.app/"
+        github="https://github.com/CavanaghMartin/ec-webft11-G10"
+      />
+
        <Project
         title="Videogames app"
         icons={frontIcons}

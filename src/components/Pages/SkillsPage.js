@@ -168,6 +168,15 @@ const SkillsPage = () => {
             </ListItem>
             <ListItem>
               <ListItemIcon className={classes.icon}>
+              <span class="iconify" data-icon="cib:react" data-inline="false"></span>
+              </ListItemIcon>
+              <ListItemText
+                primary="React-native"
+                classes={{ primary: classes.listItemText }}
+              />
+            </ListItem>
+            <ListItem>
+              <ListItemIcon className={classes.icon}>
                 <span
                   className="iconify"
                   data-icon="simple-icons:redux"
@@ -191,6 +200,15 @@ const SkillsPage = () => {
               </ListItemIcon>
               <ListItemText
                 primary="JavaScript"
+                classes={{ primary: classes.listItemText }}
+              />
+            </ListItem>
+            <ListItem>
+              <ListItemIcon className={classes.icon}>
+              <span class="iconify" data-icon="cib:typescript" data-inline="false"></span>
+              </ListItemIcon>
+              <ListItemText
+                primary="Typescript"
                 classes={{ primary: classes.listItemText }}
               />
             </ListItem>

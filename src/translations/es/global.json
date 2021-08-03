@@ -28,8 +28,9 @@
         "beatstore":"Una aplicación de ecommerce de beats realizada con la metodología SCRUM con un grupo de 5 personas durante un mes .Incluye las features:pasarela de pagos (Stripe).Envío de emails transaccionales.Sistema de descuento de productos.gestión y manejo de newsletters.Administración de carro de compras y órdenes de productos, autenticación.",
         "eatx":"Una aplicación de ecommerce de comida realizada con la metodología SCRUM con un grupo de 5 personas durante un mes .Incluye las features:pasarela de pagos (Stripe).Envío de emails transaccionales.Sistema de descuento de productos.gestión y manejo de newsletters.Administración de carro de compras y órdenes de productos, autenticación.",
         "videogamesApp":"Una aplicación hecha con React y Redux que consume una web api ",
-        "wheatherApp":"Una aplicación hecha con React y Redux que consume una web api "
-
+        "wheatherApp":"Una aplicación hecha con React y Redux que consume una web api ",
+        "todo":"Una aplicación mobile que hice para un challenge usando React-native y redux con persistance",
+        "subreddit":"Una aplicación mobile que hice para un challenge usando React-native y redux consumiendo una Subreddit web API"
     }
 
 }

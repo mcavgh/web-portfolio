@@ -28,7 +28,9 @@
         "beatstore":"A beats ecommerce  app developed with SCRUM methodology with a group of 5 people for a month. Includes features: payment gateway (Stripe). Sending transactional emails. Product discount system. Newsletters management and management. Shopping cart and product order management. , authentication.",
         "eatx":"A food ecommerce app developed with SCRUM methodology with a group of 5 people for a month. Includes features: payment gateway (Stripe). Sending transactional emails. Product discount system. Newsletters management and management. Shopping cart and product order management. , authentication.",
         "videogamesApp":"Web app made with React and Redux consuming a web api ",
-        "wheatherApp":"Web app made with React and Redux consuming a web api"
+        "wheatherApp":"Web app made with React and Redux consuming a web api",
+        "todo":"A mobile app that i made for a challenge using React-native and redux with persistance",
+        "subreddit":"A mobile app that i made for a challenge using React-native and redux consuming a Subreddit web API"
 
     }
    

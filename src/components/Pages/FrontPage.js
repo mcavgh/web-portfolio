@@ -134,7 +134,7 @@ const FrontPage = () => {
       >
           {t("front.saberbtn")}
       </Button>
-      <Hidden xsDown>
+      {/* <Hidden xsDown>
         <Fab
           className={classes.backToTopButton}
           variant="extended"
@@ -155,7 +155,7 @@ const FrontPage = () => {
         >
           <KeyboardArrowUpIcon />
         </Fab>
-      </Hidden>
+      </Hidden> */}
     </Box>
   );
 };

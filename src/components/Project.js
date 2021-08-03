@@ -36,6 +36,7 @@ const Project = (props) => {
         color:"purple",
         boxShadow: 'none',
       },
+
     },
     title: {
       fontSize: "1.4rem",
@@ -48,6 +49,8 @@ const Project = (props) => {
       alignItems: "center",
       width: "100%",
       margin: "1rem",
+            textAlign:"center",
+
     
     },
     button: {
@@ -65,16 +68,23 @@ const Project = (props) => {
       width: "100%",
     },
     image: {
-      height: "100%",
       boxShadow: "2px 2px 4px rgba(0, 0, 0, 0.2)",
       borderRadius: "4px",
     },
-    text: {
-      margin: "0.5rem 0",
-      color:"black"
+    imageMobile: {
+      height: "350px",
+      width: "200px",
+      textAlign:"center",
+      boxShadow: "2px 2px 4px rgba(0, 0, 0, 0.2)",
+      borderRadius: "4px",
+      display:"inline",
+
     },
     icon:{
       display:"inline"
+    },
+    text:{
+      textAlign:"justify"
     }
   });
   const classes = useStyles();
@@ -100,7 +110,7 @@ const Project = (props) => {
           </IconButton>
             {props.icons}
             <CardMedia
-              className={classes.image}
+              className={props.mobile===true?classes.imageMobile:classes.image}
               component="img"
               image={props.image}
               title={props.imageTitle}
