@@ -183,7 +183,7 @@ const ProjectsPage = () => {
         image={subreddit}
         imageTitle="subredit screenshot"
         //link1="https://ec-webft11-g10.vercel.app/"
-        github="https://github.com/CavanaghMartin/ec-webft11-G10"
+        github="https://github.com/CavanaghMartin/challenge-subreddit-pics"
       />
         <Project
         title="Todo-list app"
@@ -193,7 +193,7 @@ const ProjectsPage = () => {
         image={todogif}
         imageTitle="todo screenshot"
         //link1="https://ec-webft11-g10.vercel.app/"
-        github="https://github.com/CavanaghMartin/ec-webft11-G10"
+        github="https://github.com/CavanaghMartin/Todo-list"
       />
 
        <Project
