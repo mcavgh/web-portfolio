@@ -156,16 +156,6 @@ const ProjectsPage = () => {
       <Typography className={classes.headerText}>{t("proyects.title")}</Typography>
       <Divider className={classes.divider} />
       <Project
-        title="Beatstore"
-        icons={beatStoreIcons}
-      description=          {t("proyects.beatstore")}
-    
-        image={homebeatstore}
-        imageTitle="beatstore screenshot"
-        link1="https://beatstore-henry.web.app/"
-        github="https://github.com/CavanaghMartin"
-      />
-      <Project
         title="Eatx"
         icons={eatxIcons}
         description={t("proyects.eatx")}
@@ -174,6 +164,16 @@ const ProjectsPage = () => {
         imageTitle="eatx screenshot"
         link1="https://ec-webft11-g10.vercel.app/"
         github="https://github.com/CavanaghMartin/ec-webft11-G10"
+      />
+      <Project
+        title="Beatstore"
+        icons={beatStoreIcons}
+      description={t("proyects.beatstore")}
+    
+        image={homebeatstore}
+        imageTitle="beatstore screenshot"
+        link1="https://beatstore-henry.web.app/"
+        github="https://github.com/CavanaghMartin/ecommerce-ft09-g05"
       />
       <Project
         title="SubReddit app"
