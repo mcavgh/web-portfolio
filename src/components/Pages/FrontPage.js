@@ -17,12 +17,12 @@ const FrontPage = () => {
     element.scrollIntoView({ behavior: "smooth" });
   };
   const [lastYPos, setLastYPos] = React.useState(0);
-  const [shouldShowActions, setShouldShowActions] = React.useState(false);
+  const [shouldShowActions, setShouldShowActions] = React.useState(true);
 
   React.useEffect(() => {
     function handleScroll() {
       const yPos = window.scrollY;
-      if (yPos >= 0 && yPos < 330) {
+      if (yPos >-8  && yPos < 330) {
         setShouldShowActions(true);
       } else {
         setShouldShowActions(false);
