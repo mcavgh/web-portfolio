@@ -40,7 +40,7 @@ const FrontPage = () => {
         <motion.div
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: shouldShowActions ? 0 : 50, opacity: shouldShowActions ? 1 : 0 }}
-          transition={{ delay: 0.1 }}
+          transition={{ delay: 0.1, }}
 
         >
           <Typography className={classes.topText} variant="h3"            >

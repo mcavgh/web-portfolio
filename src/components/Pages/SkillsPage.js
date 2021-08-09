@@ -13,7 +13,6 @@ import {
 import theme from "./../../theme/theme";
 import * as styles from "../../theme/commonStyles";
 import { useTranslation } from 'react-i18next';
-import { useInView } from 'react-intersection-observer';
 import { motion } from "framer-motion"
 
 const SkillsPage = () => {
