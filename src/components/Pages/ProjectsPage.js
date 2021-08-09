@@ -98,7 +98,7 @@ const ProjectsPage = () => {
     <span className="iconify" style={{ fontSize: "1.7rem", margin: "0 0.35rem" }} data-icon="simple-icons:express" data-inline="false"></span>);
     const MUIcon = (
 
-<span class="iconify" data-icon="logos:material-ui" data-inline="false"></span>
+<span className="iconify" data-icon="logos:material-ui" data-inline="false"></span>
     );
 
   const beatStoreIcons = (

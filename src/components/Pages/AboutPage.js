@@ -3,7 +3,7 @@ import {  Typography, Divider, Link, makeStyles, Grid, CardMedia, Button } from 
 import theme from "../../theme/theme";
 import * as styles from "../../theme/commonStyles";
 import picture from "./../../images/picture.jpg";
-
+import { motion } from "framer-motion"
 import SkillsPage from "./SkillsPage";
 import { useTranslation } from 'react-i18next';
 
@@ -15,10 +15,32 @@ import { useTranslation } from 'react-i18next';
     const element = document.getElementById("Contact");
     element.scrollIntoView({ behavior: "smooth" });
   };
+  const [lastYPos, setLastYPos] = React.useState(0);
+  const [shouldShowActions, setShouldShowActions] = React.useState(false);
 
+  React.useEffect(() => {
+    function handleScroll() {
+      const yPos = window.scrollY;
+      if (yPos > 805 && yPos < 1573) {
+        setShouldShowActions(true);
+      } else {
+        setShouldShowActions(false);
+      }
+      setLastYPos(yPos);
+    }
+    window.addEventListener("scroll", handleScroll, false);
+    return () => {
+      window.removeEventListener("scroll", handleScroll, false);
+    };
+  }, [lastYPos]);
   return (
     <>
-      <div className={classes.AboutMe} id="AboutMe">
+      <motion.div className={classes.AboutMe} id="AboutMe"
+        initial={{ y: -150 }}
+        animate={{ y: -10 }}
+        transition={{ delay: 0.3 }}
+      
+      >
         <Grid
           container
           direction="row"
@@ -53,7 +75,6 @@ import { useTranslation } from 'react-i18next';
               .
             </Typography>
             <Button
-              color="black"
               variant="outlined"
               className={classes.button}
               aria-label="Scroll Down"
@@ -65,7 +86,7 @@ import { useTranslation } from 'react-i18next';
 
           </Grid>
         </Grid>
-      </div>
+      </motion.div>
       <SkillsPage />
     </>
   );

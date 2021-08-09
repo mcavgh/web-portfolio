@@ -1,59 +1,14 @@
 import React, { useState } from "react";
 import {
-  Grid,
-  AppBar,
-  Toolbar,
-  Typography,
-  Button,
-  Hidden,
-  Drawer,
-  IconButton,
-  List,
-  ListItem,
-  ListItemText,
-  Box,
-  makeStyles,
+  Grid, AppBar, Toolbar, Typography, Button, Hidden, Drawer, IconButton, List,
+  ListItem, ListItemText, Box, makeStyles,
 } from "@material-ui/core";
 import TranslateIcon from '@material-ui/icons/Translate';
 import MenuRoundedIcon from "@material-ui/icons/MenuRounded";
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion"
 
 const NavBar = () => {
-  const useStyles = makeStyles({
-    div: {
-      display: "flex",
-      justifyContent: "space-evenly"
-    },
-    appBar: {
-      background: "primary",
-      color: "blue",
-      position:"fixed"
-    },
-    drawerPaper: {
-      width: "60%",
-      backgroundColor: "#eeeeee",
-      color: "black",
-    },
-    button: {
-      display: "block",
-      background: "inherit",
-      borderRadius: 3,
-      color: "white",
-      height: 40,
-      padding: "0 1rem",
-      fontSize: "0.9rem",
-    },
-    text: {
-      fontSize: "1.2rem",
-    },
-    span: {
-      textShadow: "1px 1px rgba(0, 0, 0, 0.3)",
-    },
-    listItemText: {
-      fontSize: "0.9rem",
-      fontWeight: "500",
-    },
-  });
   const classes = useStyles();
 
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -79,37 +34,70 @@ const NavBar = () => {
     const element = document.getElementById(id);
     element.scrollIntoView({ behavior: "smooth" });
   };
+  const [lastYPos, setLastYPos] = React.useState(0);
+  const [shouldShowActions, setShouldShowActions] = React.useState(false);
 
+  React.useEffect(() => {
+    function handleScroll() {
+      const yPos = window.scrollY;
+      if (yPos > 805 && yPos < 1573) {
+        setShouldShowActions(true);
+      } else {
+        setShouldShowActions(false);
+      }
+      setLastYPos(yPos);
+    }
+    window.addEventListener("scroll", handleScroll, false);
+    return () => {
+      window.removeEventListener("scroll", handleScroll, false);
+    };
+  }, [lastYPos]);
   const appBarButtons = (
     <>
-    <Grid xs={12} className={classes.div}>
+      <Grid item xs={12} className={classes.div}>
 
-      <Grid item>
-        <Button className={classes.button} onClick={() => scrollTo("AboutMe")}>
-          {t("navbar.btn1")}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3 }}
+        >
+          <Grid item>
+            <Button className={classes.button} onClick={() => scrollTo("AboutMe")}>
+              {t("navbar.btn1")}
 
-        </Button>
-      </Grid>
+            </Button>
+          </Grid>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3 }}
+        >
+          <Grid item>
+            <Button className={classes.button} onClick={() => scrollTo("Projects")}>
+              {t("navbar.btn2")}
 
-      <Grid item>
-        <Button className={classes.button} onClick={() => scrollTo("Projects")}>
-          {t("navbar.btn2")}
+            </Button>
+          </Grid>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3 }}
+        >
+          <Grid item>
+            <Button className={classes.button} onClick={() => scrollTo("Contact")}>
+              {t("navbar.btn3")}
 
-        </Button>
-      </Grid>
-
-      <Grid item>
-        <Button className={classes.button} onClick={() => scrollTo("Contact")}>
-          {t("navbar.btn3")}
-
-        </Button>
-      </Grid>
+            </Button>
+          </Grid>
+        </motion.div>
 
 
 
-    </Grid >
-    
-        <TranslateIcon style={{color:"white"}} />
+      </Grid >
+
+      <TranslateIcon style={{ color: "white" }} />
       <Grid item>
         <Button className={classes.button} onClick={() => i18n.changeLanguage("es")}>
           ES
@@ -120,7 +108,7 @@ const NavBar = () => {
           EN
         </Button>
       </Grid>
-      </>
+    </>
   );
 
   const sideDrawer = (
@@ -162,6 +150,7 @@ const NavBar = () => {
   return (
     <AppBar position="relative" className={classes.appBar} id="navBar">
       <Toolbar>
+   
         <Hidden xsDown>{appBarButtons}</Hidden>
         <Hidden smUp>{sideDrawer}</Hidden>
       </Toolbar>
@@ -170,3 +159,39 @@ const NavBar = () => {
 };
 
 export default NavBar;
+
+const useStyles = makeStyles({
+  div: {
+    display: "flex",
+    justifyContent: "space-evenly"
+  },
+  appBar: {
+    background: "primary",
+    color: "blue",
+    position: "fixed"
+  },
+  drawerPaper: {
+    width: "60%",
+    backgroundColor: "#eeeeee",
+    color: "black",
+  },
+  button: {
+    display: "block",
+    background: "inherit",
+    borderRadius: 3,
+    color: "white",
+    height: 40,
+    padding: "0 1rem",
+    fontSize: "0.9rem",
+  },
+  text: {
+    fontSize: "1.2rem",
+  },
+  span: {
+    textShadow: "1px 1px rgba(0, 0, 0, 0.3)",
+  },
+  listItemText: {
+    fontSize: "0.9rem",
+    fontWeight: "500",
+  },
+});
