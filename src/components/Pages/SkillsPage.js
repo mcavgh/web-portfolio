@@ -24,6 +24,34 @@ const SkillsPage = () => {
     <div className={classes.skillsPage}>
       <ListItem>
         <ListItemIcon className={classes.icon}>
+          <span class="iconify" data-icon="vscode-icons:file-type-mysql" style={{ color: "brown" }}></span>
+        </ListItemIcon>
+        <ListItemText
+          primary="MySQL"
+          classes={{ primary: classes.listItemText }}
+        />
+      </ListItem>
+      <ListItem>
+        <ListItemIcon className={classes.icon}>
+          <span class="iconify" data-icon="simple-icons:testinglibrary" style={{ color: "brown" }}></span>
+        </ListItemIcon>
+        <ListItemText
+          primary="Testing library"
+          classes={{ primary: classes.listItemText }}
+        />
+      </ListItem>
+
+      <ListItem>
+        <ListItemIcon className={classes.icon}>
+          <span class="iconify" data-icon="vscode-icons:file-type-jest"></span>        </ListItemIcon>
+        <ListItemText
+          primary="Jest"
+          classes={{ primary: classes.listItemText }}
+        />
+      </ListItem>
+
+      <ListItem>
+        <ListItemIcon className={classes.icon}>
           <span className="iconify" data-icon="logos:material-ui"></span>
         </ListItemIcon>
         <ListItemText
@@ -31,15 +59,7 @@ const SkillsPage = () => {
           classes={{ primary: classes.listItemText }}
         />
       </ListItem>
-      <ListItem>
-        <ListItemIcon className={classes.icon}>
-          <span className="iconify" data-icon="vscode-icons:file-type-vscode"></span>
-        </ListItemIcon>
-        <ListItemText
-          primary="VSCode"
-          classes={{ primary: classes.listItemText }}
-        />
-      </ListItem>
+  
       <ListItem>
         <ListItemIcon className={classes.icon}>
           <span className="iconify" data-icon="logos:graphql"></span>
@@ -118,7 +138,7 @@ const SkillsPage = () => {
           <span className="iconify" data-icon="vscode-icons:file-type-mongo"></span>
         </ListItemIcon>
         <ListItemText
-          primary="MongoDB"
+          primary="Mongo"
           classes={{ primary: classes.listItemText }}
         />
       </ListItem>
@@ -160,7 +180,7 @@ const SkillsPage = () => {
       <Box className={`${classes.rowDiv} ${classes.rowDivider}`}>
         <Box className={classes.columnDiv}>
 
-        <motion.div
+          <motion.div
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: shouldShowActions ? 0 : 50, opacity: shouldShowActions ? 1 : 0 }}
             transition={{ delay: 0.1 }}
@@ -233,34 +253,34 @@ const SkillsPage = () => {
 
               <Hidden mdUp>{secondHalfList}</Hidden>
             </List>
-            </motion.div>
-          </Box>
-          <motion.div
-            initial={{ y: 50, opacity: 0 }}
-            animate={{ y: shouldShowActions ? 0 : 50, opacity: shouldShowActions ? 1 : 0 }}
-            transition={{ delay: 0.1 }}
+          </motion.div>
+        </Box>
+        <motion.div
+          initial={{ y: 50, opacity: 0 }}
+          animate={{ y: shouldShowActions ? 0 : 50, opacity: shouldShowActions ? 1 : 0 }}
+          transition={{ delay: 0.1 }}
 
-          >
+        >
           <Hidden smDown>
             <Box className={classes.columnDiv}>
 
               <List>{secondHalfList}</List>
             </Box>
           </Hidden>
-          </motion.div>
-          <motion.div
-            initial={{ y: 50, opacity: 0 }}
-            animate={{ y: shouldShowActions ? 0 : 50, opacity: shouldShowActions ? 1 : 0 }}
-            transition={{ delay: 0.1 }}
+        </motion.div>
+        <motion.div
+          initial={{ y: 50, opacity: 0 }}
+          animate={{ y: shouldShowActions ? 0 : 50, opacity: shouldShowActions ? 1 : 0 }}
+          transition={{ delay: 0.1 }}
 
-          >
+        >
 
           <Hidden smDown>
             <Box className={classes.columnDiv}>
               <List>{thirdHalfList}</List>
             </Box>
           </Hidden>
-          </motion.div>
+        </motion.div>
       </Box>
     </Box>
   );
