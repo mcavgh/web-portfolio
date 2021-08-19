@@ -117,8 +117,9 @@ const useStyles = makeStyles({
     margin: "0 auto",
   },
   headerText: {
-    color:"blue",
+    color:"white",
     ...styles.headerText,
+    textShadow:"black"
   },
   aboutText: {
   },
@@ -127,7 +128,7 @@ const useStyles = makeStyles({
   },
   bodyText: {
     fontSize: "1.1rem",
-    color: "black",
+    color: "white",
     maxWidth: "100%",
     maxHeight: "100%",
     margin: "1rem",
@@ -145,7 +146,8 @@ const useStyles = makeStyles({
   },
   flexbos: {
     display: "flex",
-    justifyContent: "space-around"
+    justifyContent: "space-around",
+    backgroundColor:"#007cff"
   },
   picture: {
     width: "100%",
@@ -175,6 +177,7 @@ const useStyles = makeStyles({
     display: "block",
   },
   button:{
+    color:"white",
     boxShadow: "4px 4px 3px grey",
     '&:hover': {
       backgroundColor: '#ffffff',

@@ -62,6 +62,7 @@ const FrontPage = () => {
       >
         <Button
           variant="outlined"
+          style={{color:"white"}}
           className={classes.button}
           aria-label="Scroll Down"
           onClick={() => scrollTo("AboutMe")}
@@ -99,7 +100,7 @@ const useStyles = makeStyles({
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
-    backgroundImage: "linear-gradient(135deg,#ff2300,#a100cd)",
+    backgroundImage: "linear-gradient(135deg,#007cff,#a100cd)",
     width: "100%",
     height: "90vh",
     //backgroundImage: `url(${backgroundImage})`,
