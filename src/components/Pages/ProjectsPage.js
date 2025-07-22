@@ -202,7 +202,7 @@ const ProjectsPage = () => {
         description={t("proyects.videogamesApp")}
         image={videogamesHome}
         imageTitle="videogames screenshot"
-        link1="https://pi-videogames.vercel.app/home"
+        link1="https://videogames-app.vercel.app/"
         github="https://github.com/CavanaghMartin/videogames_app"
       />
           <Project
